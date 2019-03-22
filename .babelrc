@@ -1,4 +1,22 @@
 {
     "presets": ["@babel/preset-env","@babel/preset-react"],
-    "plugins": ["react-hot-loader/babel"]
+    "plugins": ["react-hot-loader/babel","@babel/transform-runtime","@babel/plugin-proposal-class-properties"]
 }
+
+
+//Babel 7 regenerator runtime issue when using async await do below steps
+
+// npm install --save @babel/runtime 
+// npm install --save-dev @babel/plugin-transform-runtime
+// And, in .babelrc, add:
+
+// {
+//     "presets": ["@babel/preset-env"],
+//     "plugins": [
+//         ["@babel/transform-runtime"]
+//     ]
+// }
+
+
+//Babel class Property when uisng arraw function  npm install --save-dev @babel/plugin-proposal-class-properties
+
