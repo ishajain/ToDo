@@ -31,9 +31,9 @@ class AddToDo extends React.Component{
         return (
         <div>
             <input {...input} placeholder={placeholder} autoComplete="off" ></input>
-            <div>
+            {/* <div>
                 <pre>{JSON.stringify(meta,0,2)}</pre>
-            </div>
+            </div> */}
             {this.renderErrorMessage(meta)}
         </div>
        )
